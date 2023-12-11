@@ -112,9 +112,9 @@ export function PlanPrice(props: PlanPriceProps) {
   }
 
   const monthlyDisplay = annual;
-
   const priceUnit = monthlyDisplay ? '/ month / dev' : '/ dev';
-  const getPriceExplanation = (displayedValue: number) => {
+  
+  function getPriceExplanation  (displayedValue: number)  {
     if (!annual) {
       return `$${displayedValue}/dev billed once.`;
     }
